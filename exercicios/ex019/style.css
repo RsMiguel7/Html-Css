@@ -1,0 +1,39 @@
+@charset "UTF-8"
+
+h1      {
+        font-size: xx-large;
+        font-weight: 325px;
+        font-family: sans-serif;
+        text-align: center;
+        background-color: aliceblue;
+}
+h2      {
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+        text-indent: 30px;
+}
+p       {
+        text-indent: 10px;
+        font-size: medium;
+}
+body    {
+        background-color:#25BAF5;
+
+}
+main    {
+        text-align: justify;
+        background-color: #B3F5CA;
+        padding: 2cm;
+        margin: auto;
+        box-shadow: 4px 1px 3px;
+        font-size: x-small;
+}
+h1#principal {
+        background-color: aliceblue;
+}
+h2.basico {
+        background-color: aliceblue;
+}
+h1.link {
+        background-color: aliceblue;
+}
