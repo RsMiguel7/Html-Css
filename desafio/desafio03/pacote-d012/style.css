@@ -1,14 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+root {
+        --fontPadrão: Verdana, tahoma, sans-serif;
+        --fontConteudo: "Fredoka", sans-serif;
+        --fontTitulo: "Protest Strike", sans-serif;
+}
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1,5em;
 }
 
 html.body {
     background-color: rgba(236, 250, 176, 0.79);
     min-height: 100vh;
+    font-family: var(--fontpadrão);
 }
 
 header {
@@ -20,6 +31,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonttitulo);
+    font-size: 4em;
 }
 
 header > p {
@@ -51,11 +64,13 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.279);
     color: white;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     width: 400px;
     background-color: rgba(0, 0, 0, 0.443);
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.644);
 }
 
 section {
@@ -63,5 +78,24 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fontConteudo);
+    font-size: 1,5em;
+    font-size: larger;
 }
 
+section > p {
+    padding-bottom: 15px;
+    text-align: justify center;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+   background-image: url(imagens/background002.jpg);
+   background-position: left center;
+   background-size: cover;
+}
