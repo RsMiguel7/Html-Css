@@ -30,13 +30,30 @@
             font-size: medium;
             text-decoration: none;
             color: black;
-            background-color: aliceblue;
             text-shadow: 1px;
         }
 
         h1 {
             text-align: center;
             font-size: 30px;
+        }
+
+        th.popul {
+            width: 120px;
+        }
+
+        th.est {
+            width: 380px;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(46, 94, 253, 0.626);
+            color: aliceblue;
+        }
+
+        tfoot {
+            background-color: grey;
+            color: white;
         }
     </style>
 </head>
@@ -45,8 +62,8 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th class="est">Estado</th>
+                <th class="popul">População</th>
             </tr>
         </thead>
         <tbody>
@@ -61,6 +78,18 @@
             <tr>
                 <td><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro">Rio de Janeiro</a></td>
                 <td>17.024.200</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Bahia">Bahia</a></td>
+                <td>14.141.626</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo">São Paulo</a></td>
+                <td>44.411.238</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul">Rio Grande do Sul</a></td>
+                <td>11.290.000</td>
             </tr>
         </tbody>
         <tfoot>
