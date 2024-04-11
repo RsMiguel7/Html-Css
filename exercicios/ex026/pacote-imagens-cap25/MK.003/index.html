@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia Query</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <style>    
+     *  {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetice, sans-serif;
+    }
+
+    html,body {
+        width: 100vw;
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        color: white;
+        text-shadow: 3px 3px 0px rgba(12, 12, 109, 0.63);
+    }
+        /* retrato */
+
+    @media  screen and (orientation: portrait) {
+        body {
+        background-color: rgba(165, 42, 42, 0.795);
+        background: url(imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }   
+    }
+    
+
+        /* paisagem */
+
+    @media  screen and (orientation: landscape) {
+        body {
+        background-color: #ff9d00d3;
+        background: url(imagens/cev-landscape.jpg);
+        background-position: left bottom;
+    }
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Mude seu Banner</h1>
+</body>
+</html>
