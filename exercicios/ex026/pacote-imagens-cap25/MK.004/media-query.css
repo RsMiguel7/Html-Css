@@ -1,3 +1,82 @@
 @charset "UTF-8";
+ 
+/* Typical Device Breakpoints 
+---------------------------------
+PEQUENAS TELAS: ate 600px
 
-/* Todas as demais */
+Celular- 600 a 800px
+Tablet-  770 a 992px
+Desktop- 992 a 1200px
+
+GRANDES TELAS: acima de 1200px
+*/
+
+@media print { /* IMPRESSORA */
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    body {
+        background-image: url(imagens/back-print.jpg);
+    }                     
+    /* -------------------------
+             SEM PRECISAR 
+    --------------------------- */
+                        
+    img#tel {  display: block; }
+    img#tab {  display: none;  } 
+    img#imp {  display: none;  }
+    img#pc  {  display: none;  }
+    img#tv  {  display: none;  }
+}
+
+                    /* TABLET */
+
+@media screen and (min-width: 770px) and (max-width: 992px) { 
+    body {
+        background-image: url(imagens/back-tablet.jpg);
+    }
+
+    img#tel {  display: none;  }
+    img#tab {  display: block; } 
+    img#imp {  display: none;  }
+    img#pc  {  display: none;  }
+    img#tv  {  display: none;  }
+}
+
+                   /* DESKTOP */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    body {
+        background-image: url(imagens/back-pc.jpg);
+    }
+
+    img#tel {  display: none;  }
+    img#tab {  display: none;  } 
+    img#imp {  display: none;  }
+    img#pc  {  display: block; }
+    img#tv  {  display: none;  }
+}
+
+                    /* GRANDES TELAS */
+
+@media screen and (min-width: 1200px) {  
+    body {
+        background-image: url(imagens/back-tv.jpg);
+    }
+
+    img#tel {  display: none; }
+    img#tab {  display: none;  } 
+    img#imp {  display: none;  }
+    img#pc  {  display: none;  }
+    img#tv  {  display: block;  }    
+}
