@@ -28,6 +28,7 @@ GRANDES TELAS: acima de 1200px
     body {
         background-image: url(imagens/back-print.jpg);
     }                     
+
     /* -------------------------
              SEM PRECISAR 
     --------------------------- */
@@ -70,10 +71,15 @@ GRANDES TELAS: acima de 1200px
                     /* GRANDES TELAS */
 
 @media screen and (min-width: 1200px) {  
+
     body {
         background-image: url(imagens/back-tv.jpg);
     }
 
+    main {
+        width: 500px;
+    }
+    
     img#tel {  display: none; }
     img#tab {  display: none;  } 
     img#imp {  display: none;  }
