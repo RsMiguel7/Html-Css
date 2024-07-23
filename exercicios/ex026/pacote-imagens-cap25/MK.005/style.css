@@ -8,6 +8,7 @@
 body {
     font-family: cursive;
     background-color: aliceblue;
+    background-image: url(images.jpeg);
 }
 
 main {
@@ -17,6 +18,7 @@ main {
     padding: 10px;
     border: 10px;
     margin-top: 10px;
+    background-image: url(images.jpeg);
 }
 
 article > h2 {
@@ -54,6 +56,12 @@ menu > ul > li > a {
     color: white;
     text-align: center;
     border: 2px solid rgb(75, 75, 75);
+}
+
+li {
+    display: inline-block;
+    width: 18%;
+    padding-left: 10px;
 }
 
 menu > ul > li > a:hover {
