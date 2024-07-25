@@ -18,7 +18,20 @@ main {
     padding: 10px;
     border: 10px;
     margin-top: 10px;
-    background-image: url(images.jpeg);
+}
+
+i#menu :hover {
+    background-color: white;
+    color: black;
+}
+
+i#menu {
+    cursor: pointer;
+    color: white;
+    display: block;
+    background-color: rgb(148, 147, 147);
+    text-align: center;
+    padding: 10px;
 }
 
 article > h2 {
@@ -42,7 +55,7 @@ header > h1 {
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu > ul {
@@ -56,12 +69,6 @@ menu > ul > li > a {
     color: white;
     text-align: center;
     border: 2px solid rgb(75, 75, 75);
-}
-
-li {
-    display: inline-block;
-    width: 18%;
-    padding-left: 10px;
 }
 
 menu > ul > li > a:hover {
